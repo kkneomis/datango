@@ -2,14 +2,6 @@ def upload_image(image_file, filename):
     import boto3
     from botocore.client import Config
 
-    #ACCESS_KEY_ID = 'AKIAJCQD7IY3XXCKDVGQ'
-    #ACCESS_SECRET_KEY = '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'
-    #BUCKET_NAME = 'myrecoknitionimages'
-
-    ACCESS_KEY_ID = 'AKIAJKLGAPRU5MERRKSQ' 
-    ACCESS_SECRET_KEY =  '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'
-    BUCKET_NAME = 'myrecoknitionimages-1'
-
     s3 = boto3.resource(
         's3',
         aws_access_key_id=ACCESS_KEY_ID,
